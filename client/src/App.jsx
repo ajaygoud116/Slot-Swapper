@@ -12,39 +12,10 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<AuthPage />} />
-          <Route
-            path="/home"
-            element={
-              <ProtectedRoute>
-                <HomePage />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/dashboard"
-            element={
-              <ProtectedRoute>
-                <DashboardPage />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/marketplace"
-            element={
-              <ProtectedRoute>
-                <MarketplacePage />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/notifications"
-            element={
-              <ProtectedRoute>
-                <NotificationsPage />
-              </ProtectedRoute>
-            }
-          />
-
+          <Route path="/home" element={<ProtectedRoute><HomePage /></ProtectedRoute>}/>
+          <Route path="/dashboard" element={<ProtectedRoute><DashboardPage /></ProtectedRoute>}/>
+          <Route path="/marketplace" element={<ProtectedRoute><MarketplacePage /></ProtectedRoute>}/>
+          <Route path="/notifications" element={<ProtectedRoute><NotificationsPage /></ProtectedRoute>}/>
         </Routes>
       </Router>
     </AuthContextProvider>

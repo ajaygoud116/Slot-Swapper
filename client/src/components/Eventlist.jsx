@@ -14,17 +14,19 @@ const EventList = ({ events, onToggle }) => {
           <li
             key={event.id}
             style={{
-              border: "1px solid #ccc",
+              border: "1px solid #e11c1cff",
               borderRadius: "8px",
               margin: "10px auto",
               width: "300px",
               padding: "10px",
               backgroundColor:
-                event.status === "SWAPPABLE" ? "#d4f4dd" : "#f0f0f0",
+                event.status === "SWAPPABLE" ? "#14d149ff" : "#53f42fff",
             }}
           >
             <strong>{event.title}</strong>
             <p>{event.date}</p>
+            <p>{event.startTime}</p>
+            <p>{event.endTime}</p>
             <p>Status: {event.status}</p>
             <button onClick={() => onToggle(event.id)}>
               {event.status === "BUSY"

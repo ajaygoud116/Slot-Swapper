@@ -25,7 +25,7 @@ const SwapModal = ({ mySlots, onClose, onSendSwap }) => {
     >
       <div
         style={{
-          backgroundColor: "#fff",
+          backgroundColor: "#11d037ff",
           padding: "20px",
           borderRadius: "10px",
           width: "350px",

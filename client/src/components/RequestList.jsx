@@ -12,17 +12,17 @@ const RequestList = ({ requests, type, onAction }) => {
         <li
           key={req.id}
           style={{
-            border: "1px solid #ccc",
+            border: "1px solid #056624ff",
             borderRadius: "8px",
             margin: "10px auto",
             width: "320px",
             padding: "10px",
             backgroundColor:
               req.status === "ACCEPTED"
-                ? "#d4f4dd"
+                ? "#0ec141ff"
                 : req.status === "REJECTED"
-                ? "#f8d7da"
-                : "#f0f0f0",
+                ? "#0ebd1aff"
+                : "#13d210ff",
           }}
         >
           {type === "incoming" ? (

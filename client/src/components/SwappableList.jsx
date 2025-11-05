@@ -14,12 +14,12 @@ const SwappableList = ({ slots, onRequestSwap }) => {
           <li
             key={slot.id}
             style={{
-              border: "1px solid #ccc",
+              border: "1px solid #16e654ff",
               borderRadius: "8px",
               margin: "10px auto",
               width: "320px",
               padding: "10px",
-              backgroundColor: "#eef6ff",
+              backgroundColor: "#18e45fff",
             }}
           >
             <strong>{slot.title}</strong>

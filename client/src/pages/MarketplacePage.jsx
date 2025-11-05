@@ -28,7 +28,7 @@ const MarketplacePage = () => {
   const handleSendSwap = (mySlotId) => {
     setShowModal(false);
     setConfirmation(
-      `✅ Swap request sent for "${selectedSlot.title}" using your slot #${mySlotId}`
+      ` Swap request sent for "${selectedSlot.title}" using your slot #${mySlotId}`
     );
     // Later: make POST /api/swap-request call here
   };

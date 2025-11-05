@@ -9,10 +9,10 @@ const AuthPage = () => {
     <div style={{ textAlign: "center", marginTop: "40px" }}>
       <h1>Welcome to the Swap Scheduler</h1>
       {isLogin ? <LoginForm /> : <RegisterForm />}
-      <p style={{ marginTop: "10px" }}>
+      <p style={{ marginTop: "20px" }}>
         {isLogin ? "Don't have an account?" : "Already have an account?"}
         <button
-          style={{ marginLeft: "10px" }}
+          style={{ marginLeft: "20px" }}
           onClick={() => setIsLogin(!isLogin)}
         >
           {isLogin ? "Register" : "Login"}

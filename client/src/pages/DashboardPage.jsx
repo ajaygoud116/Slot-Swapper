@@ -11,7 +11,7 @@ const DashboardPage = () => {
 
   // Add new event
   const addEvent = (newEvent) => {
-    setEvents([...events, { ...newEvent, id: Date.now() }]);
+    setEvents([...events, { ...newEvent, id: Date.now(), startTime: newEvent.startTime, endTime: newEvent.endTime,  }]);
   };
 
   // Toggle event status

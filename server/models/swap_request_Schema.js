@@ -13,13 +13,23 @@ const swapRequestSchema = new mongoose.Schema({
   },
   status: {
     type: String,
-    enum: ["pending", "accepted", "rejected"],
-    default: "pending",
+    enum: ["PENDING", "ACCEPTED", "REJECTED"],
+    default: "PENDING",
   },
   createdAt: {
     type: Date,
     default: Date.now,
   },
+  mySlot: { 
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Event", 
+    required: true
+ },
+  theirSlot: { 
+    type: mongoose.Schema.Types.ObjectId, 
+    ref: "Event", 
+    required: true 
+},
 });
 
 export default mongoose.model("SwapRequest", swapRequestSchema);
